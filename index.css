@@ -11,18 +11,32 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 	outline: 0;
 	padding: 0;
 	margin: 0;
-	/* border: 0; */
+	border: 0;
 	}
 /* remember to define focus styles! */
 :focus {
 	outline: 0;
 	}
+body {
+	background: white;
+	line-height: 1;
+	color: black;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+*{
 box-sizing:border-box;
 padding:0;
 margin:0;
 max-width:100%;
 border:1px solid grey;
-
+}
 
 /* general styles Brit Uses */
 html {
@@ -37,33 +51,49 @@ body {
 section {
     padding:4% 0;
     font-family: 'Roboto Mono', monospace;
-
+    width:90%;
+    margin: 0 auto;
 }
-a{
-    text-decoration:none;
+h1 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 5rem;
+}
+h1:hover{
+    color:#FF764E;
 }
 /* Header Section Styles */
 nav {
-    padding: 2% 0;
+    padding: 2% 1%;
 }
 nav a{
-    display:inline-blockwidth; 10%;
+    display: inline-block;
+    width: 10%;
     padding: 1% 0;
-    border-radius:10%;
+    border-radius:8px;
     text-align:center;
     color:#fff;
+    text-decoration:none;
 }
 .orange{
     background-color: #FF764E;
     margin-left:12%;
 }
+.orange:hover{
+    background-color: #4F4F4F;
+}
 .blue{
     background-color: #5ED3EB;
-    margin:25%;
+    margin:0 23%;
+}
+.blue:hover{
+    background-color: #4F4F4F;
 }
 .yellow{
     background-color: #FFCD69;
     margin-right:10%
+}
+.yellow:hover{
+    background-color:#4F4F4F;
 }
 
 /* top section styles */
@@ -85,5 +115,30 @@ nav a{
     width:50%;
     margin-left:5%;
     position:absolute;
-    top:45%;
+    top:35%;
+}
+
+/* center website */
+.middle{
+    background-color: #ddb9a3;
+    color:#fff;
+    padding: 1%;
+}
+.campfire, .camper {
+    width: 25%;
+    margin: 4% auto;
+}
+.bold {
+    font-weight:bold;
+}
+.background-img{
+    background-image: url('assets/footer_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 50vh;
+    width: 100%;
+}
+.footer{
+    background-color: #F9E7DC;
 }
